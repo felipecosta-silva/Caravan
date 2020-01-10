@@ -11,3 +11,12 @@ body {
 .linha {
   border-bottom: 4px solid blue;
 }
+
+.icone {
+	height: 100px;
+}
+
+#home-quote {
+	background: url("../img/bg-quote.jpg") center center;
+	background-size: cover;
+}
