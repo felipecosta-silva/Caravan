@@ -31,6 +31,19 @@ body {
   .fixed-top {
     position: relative;
   }
+  
+}
+
+@media (max-width: 576px){
+  footer {
+    text-align: center;
+  }
+  
+  footer .btn {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
 }
 
 .pergunta {
