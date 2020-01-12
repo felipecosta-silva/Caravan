@@ -32,6 +32,9 @@ body {
     position: relative;
   }
   
+   #perguntasFrenquentes {
+    text-align: center;
+  }
 }
 
 @media (max-width: 576px){

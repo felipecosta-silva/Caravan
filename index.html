@@ -12,6 +12,36 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
+       
+       <!-- Modal -->
+    <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="modaLoginTitulo" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modaLoginTitulo">Entre na sua conta</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="loginEmail">E-mail</label>
+                <input type="email" class="form-control" id="loginEmail" placeholder="Digiete seu e-mail">
+              </div>
+              <div class="form-group">
+                <label for="loginSenha">Senha</label>
+                <input type="password" class="form-control" id="loginSenha" placeholder="Digite sua Senha">
+              </div>
+              <button type="submit" class="btn btn-primary">Entrar na Conta</button>
+              <small class="form-text text-muted">Esqueceu a senha? <a href="">Clique aqui</a></small>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+       
+<!--   Fecha Modal  -->
         <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light py-3 box-shadow">
             <a href="index.html" class="navbar-brand">
               <img src="img/caravan.svg" alt="Caravan">
@@ -37,7 +67,7 @@
                   <a class="nav-link" href="contato.html">Contato</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Login</a>
+                  <a class="nav-link" href="#" data-toggle="modal" data-target="#modalLogin">Login</a>
                 </li>
                 <li class="nav-item">
                   <a class="btn btn-outline-primary ml-md-2" href="inscricao.html">Inscreva-se</a>
@@ -85,7 +115,7 @@
                 </a>
               </div>
             </div>
-            <div class="col-lg-5 p-4">
+            <div class="col-lg-5 p-4 align-self-center">
               <h1 class="display-4">Realize a viagem do seu sonho</h1>
               <p class="lead">O melhor local para viajar é com a Caravan, mais de 5.000 excurções concluidas.</p>
               <form action="">
@@ -169,7 +199,7 @@
                 <h2 class="display-4 text-primary">Aproveite as viagens</h2>
             </div>
             <div class="row justify-content-center">
-              <div class="col-6" id="perguntasFrenquentes" data-children=".pergunta">
+              <div class="col-md-6" id="perguntasFrenquentes" data-children=".pergunta">
                 <div id="pergunta py-2">
                   <a class="lead" data-toggle="collapse" data-parent="#perguntasFrenquentes" href="#pergunta1" aria-expanded="true" aria-controls="pergunta1">-> É possível cancelar essa viagem?</a>
                   <div id="pergunta1" class="collapse show" role="tabpanel">
@@ -207,12 +237,12 @@
                 <div class="dropdown-divider"></div>
               </div>
             </div>
-            <div class="text-center my-4">
+            <div class="text-center my-4 pb-4">
               <p class="small">FALE CONOSCO PARA MAIS DÚVIDAS</p>
               <a class="btn btn-primary btn-lg" href="contato.html">Entre em contato</a>
             </div>
         </section>    
-        <footer class="bg-dark text-white">
+        <footer class="bg-dark text-white pt-3">
           <div class="container py-4">
             <div class="row justify-content-center">
               <div class="col-md-3 col-sm-6 col-12 mb-3">
@@ -248,6 +278,9 @@
                 </ul>
               </div>
             </div>
+          </div>
+          <div class="bg-primary text-center py-3">
+            <p class="mb-0">Caravan 2017. Alguns direitos reservados.</p>
           </div>
         </footer>
                           
