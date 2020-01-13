@@ -3,8 +3,8 @@ body {
 }
 
 .box-shadow {
-  box-shadow : 0 2px 4px 0 rgba(0,0,0,.05),
-               0 4px 8px 0 rgba(0,0,0,.05);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .05),
+    0 4px 8px 0 rgba(0, 0, 0, .05);
 }
 
 .linha {
@@ -12,41 +12,42 @@ body {
 }
 
 .icone {
-	height: 100px;
+  height: 100px;
 }
 
 #home-quote {
-	background: url("../img/bg-quote.jpg") center center;
-	background-size: cover;
+  background: url("../img/bg-quote.jpg") center center;
+  background-size: cover;
 }
 
-@media (max-width: 767px){
-  #home-quote .display-4{
+@media (max-width: 767px) {
+  #home-quote .display-4 {
     font-size: 2.5rem;
   }
+
   body {
     padding-top: 0px;
   }
-  
+
   .fixed-top {
     position: relative;
   }
-  
-   #perguntasFrenquentes {
+
+  #perguntasFrenquentes {
     text-align: center;
   }
 }
 
-@media (max-width: 576px){
+@media (max-width: 576px) {
   footer {
     text-align: center;
   }
-  
+
   footer .btn {
     margin-left: auto;
     margin-right: auto;
   }
-  
+
 }
 
 .pergunta {
