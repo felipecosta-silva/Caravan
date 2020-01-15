@@ -65,7 +65,7 @@
           <a class="nav-link" href="planos.html">Planos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="contato.html">Contato</a>
+          <a class="nav-link active" href="contato.html">Contato</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#" data-toggle="modal" data-target="#modalLogin">Login</a>
@@ -77,13 +77,13 @@
     </div>
   </nav>
 
-  <section>
+  <section class="container">
     <div class="my-5 text-center">
       <span class="h6 d-block">POSSUI ALGUMA DÚVIDAS?</span>
-      <h2 class="display-4 text-primary">Fale Conosco</h2>
+      <h1 class="display-4 text-primary">Fale Conosco</h1>
     </div>
     <div class="row">
-      <div class="col">
+      <div class="col-lg">
         <form class="bg-light rounded p-4 box-shadow" active="">
           <div class="form-gtoup">
             <label for="clienteNome">Nome</label>
@@ -94,10 +94,28 @@
             <input type="email" class="form-control" id="clienteEmail">
           </div>
           <div class="form-group">
-            
+            <label for="clienteMensagem">Mensagem</label>
+            <textarea class="form-control" id="clienteMensagem" rows="4"></textarea>
           </div>
           <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
         </form>
+      </div>
+      <div class="col-lg">
+        <h2 class="h6">NOSSO ENDEREÇO</h2>
+        <img class="img-fluid box-shadow rounded mb-4" src="img/mapa.png" alt="Endereço da Empresa">
+
+        <h2 class="h6">DADOS DE CONTATO</h2>
+        <ul class="list-unstyled text-secondary">
+          <li>felipecostati@gmail.com</li>
+          <li>(81) 9 9999-9999</li>
+          <li>De Seg. à Sex. das 8h ás 18h</li>
+        </ul>
+        <h4 class="h6">REDES SOCIAIS</h4>
+        <ul class="list-unstyled" style="max-width: 260px">
+          <li><a class="btn btn-sm btn-outline-secondary btn-block mb-2" href="#" >Facebook</a></li>
+          <li><a class="btn btn-sm btn-outline-secondary btn-block mb-2" href="#" >Twitter</a></li>
+          <li><a class="btn btn-sm btn-outline-secondary btn-block mb-2" href="#" >YouTube</a></li>
+        </ul>
       </div>
     </div>
   </section>
@@ -189,7 +207,7 @@
       </div>
     </div>
     <div class="bg-primary text-center py-3">
-      <p class="mb-0">Caravan 2017. Alguns direitos reservados.</p>
+      <p class="mb-0">Caravan © 2017. Alguns direitos reservados.</p>
     </div>
   </footer>
 
